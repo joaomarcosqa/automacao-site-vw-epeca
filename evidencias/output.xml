@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.3 on win32)" generated="20220321 15:18:49.763" rpa="false" schemaversion="2">
+<suite id="s1" name="Fluxo Carrinho" source="C:\Users\Yjoao\Downloads\Telegram Desktop\AUTOMACAO\AUTOMACAO_E-PECA\Web_Automation\Tests\fluxo_carrinho.robot">
+<test id="s1-t1" name="Test case 01: Validar quantidade e preço do produto Filtro de Óleo VW JZZ115561A">
+<kw name="Abrir navegador" library="resource_commom" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220321 15:18:50.155" level="INFO">Opening browser 'headlesschrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220321 15:18:50.154" endtime="20220321 15:18:51.503"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220321 15:18:51.503" endtime="20220321 15:18:51.617"/>
+</kw>
+<status status="PASS" starttime="20220321 15:18:50.154" endtime="20220321 15:18:51.618"/>
+</kw>
+<kw name="DADO que eu esteja logado no site - VW" library="keywords_carrinho">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${home_inicio}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220321 15:18:51.619" level="INFO">Opening url 'https://pecas.vw.com.br/'</msg>
+<status status="PASS" starttime="20220321 15:18:51.618" endtime="20220321 15:18:54.680"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${perfil_entrar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 15:18:54.681" level="INFO">Clicking element 'xpath=//*[@id="header"]/div/div/div[3]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20220321 15:18:54.680" endtime="20220321 15:18:54.723"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ponteiro_login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220321 15:18:54.723" endtime="20220321 15:18:54.962"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${campo_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 15:18:54.962" level="INFO">Typing text 'testeepeca@gmail.com' into text field 'xpath=//*[@id="login"]/div/div[1]/div[1]/div[1]/div/div/input'.</msg>
+<msg timestamp="20220321 15:18:55.028" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220321 15:18:55.029" level="FAIL">Element with locator 'xpath=//*[@id="login"]/div/div[1]/div[1]/div[1]/div/div/input' not found.</msg>
+<status status="FAIL" starttime="20220321 15:18:54.962" endtime="20220321 15:18:55.029"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${campo_senha}</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220321 15:18:55.029" endtime="20220321 15:18:55.029"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_entrar}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220321 15:18:55.029" endtime="20220321 15:18:55.029"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ponteiro_login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220321 15:18:55.029" endtime="20220321 15:18:55.029"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>8</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220321 15:18:55.029" endtime="20220321 15:18:55.029"/>
+</kw>
+<status status="FAIL" starttime="20220321 15:18:51.618" endtime="20220321 15:18:55.030"/>
+</kw>
+<kw name="QUANDO eu procurar o produto VW JZZ115561A - VW" library="keywords_carrinho">
+<status status="NOT RUN" starttime="20220321 15:18:55.030" endtime="20220321 15:18:55.031"/>
+</kw>
+<kw name="ENTAO devo validar a quantidade e preço do produto JZZ115561A - VW" library="keywords_carrinho">
+<status status="NOT RUN" starttime="20220321 15:18:55.031" endtime="20220321 15:18:55.031"/>
+</kw>
+<kw name="Fechar navegador" library="resource_commom" type="TEARDOWN">
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20220321 15:18:55.032" endtime="20220321 15:18:55.067"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220321 15:18:55.067" endtime="20220321 15:18:58.232"/>
+</kw>
+<status status="PASS" starttime="20220321 15:18:55.032" endtime="20220321 15:18:58.232"/>
+</kw>
+<status status="FAIL" starttime="20220321 15:18:50.153" endtime="20220321 15:18:58.232">Element with locator 'xpath=//*[@id="login"]/div/div[1]/div[1]/div[1]/div/div/input' not found.</status>
+</test>
+<test id="s1-t2" name="Test case 02: Excluir o produto Filtro de Óleo VW JZZ115561A do carrinho">
+<kw name="Abrir navegador" library="resource_commom" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220321 15:18:58.234" level="INFO">Opening browser 'headlesschrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220321 15:18:58.234" endtime="20220321 15:18:59.784"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220321 15:18:59.784" endtime="20220321 15:18:59.889"/>
+</kw>
+<status status="PASS" starttime="20220321 15:18:58.234" endtime="20220321 15:18:59.889"/>
+</kw>
+<kw name="DADO que eu esteja logado no site - VW" library="keywords_carrinho">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${home_inicio}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220321 15:18:59.890" level="INFO">Opening url 'https://pecas.vw.com.br/'</msg>
+<status status="PASS" starttime="20220321 15:18:59.889" endtime="20220321 15:19:02.995"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${perfil_entrar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 15:19:02.995" level="INFO">Clicking element 'xpath=//*[@id="header"]/div/div/div[3]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20220321 15:19:02.995" endtime="20220321 15:19:03.033"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ponteiro_login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220321 15:19:03.033" endtime="20220321 15:19:03.263"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${campo_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 15:19:03.263" level="INFO">Typing text 'testeepeca@gmail.com' into text field 'xpath=//*[@id="login"]/div/div[1]/div[1]/div[1]/div/div/input'.</msg>
+<msg timestamp="20220321 15:19:03.316" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220321 15:19:03.316" level="FAIL">Element with locator 'xpath=//*[@id="login"]/div/div[1]/div[1]/div[1]/div/div/input' not found.</msg>
+<status status="FAIL" starttime="20220321 15:19:03.263" endtime="20220321 15:19:03.316"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${campo_senha}</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220321 15:19:03.317" endtime="20220321 15:19:03.317"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_entrar}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220321 15:19:03.317" endtime="20220321 15:19:03.317"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ponteiro_login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220321 15:19:03.317" endtime="20220321 15:19:03.317"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>8</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220321 15:19:03.317" endtime="20220321 15:19:03.317"/>
+</kw>
+<status status="FAIL" starttime="20220321 15:18:59.889" endtime="20220321 15:19:03.317"/>
+</kw>
+<kw name="QUANDO eu adicionar o produto VW JZZ115561A no carrinho - VW" library="keywords_carrinho">
+<status status="NOT RUN" starttime="20220321 15:19:03.318" endtime="20220321 15:19:03.318"/>
+</kw>
+<kw name="ENTAO devo retirar o produto VW JZZ115561A do carrinho - VW" library="keywords_carrinho">
+<status status="NOT RUN" starttime="20220321 15:19:03.318" endtime="20220321 15:19:03.318"/>
+</kw>
+<kw name="Fechar navegador" library="resource_commom" type="TEARDOWN">
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20220321 15:19:03.319" endtime="20220321 15:19:03.357"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220321 15:19:03.357" endtime="20220321 15:19:06.530"/>
+</kw>
+<status status="PASS" starttime="20220321 15:19:03.319" endtime="20220321 15:19:06.530"/>
+</kw>
+<status status="FAIL" starttime="20220321 15:18:58.233" endtime="20220321 15:19:06.531">Element with locator 'xpath=//*[@id="login"]/div/div[1]/div[1]/div[1]/div/div/input' not found.</status>
+</test>
+<test id="s1-t3" name="Test case 03: Aumentar quantidade do produto Filtro de Óleo VW JZZ115561A do carrinho">
+<kw name="Abrir navegador" library="resource_commom" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" starttime="20220321 15:19:06.533" endtime="20220321 15:19:06.533"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220321 15:19:06.533" endtime="20220321 15:19:06.533"/>
+</kw>
+<status status="FAIL" starttime="20220321 15:19:06.533" endtime="20220321 15:19:06.533"/>
+</kw>
+<kw name="Fechar navegador" library="resource_commom" type="TEARDOWN">
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<msg timestamp="20220321 15:19:06.534" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220321 15:19:06.554" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220321 15:19:06.534" endtime="20220321 15:19:06.554"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220321 15:19:06.554" endtime="20220321 15:19:06.555"/>
+</kw>
+<status status="FAIL" starttime="20220321 15:19:06.534" endtime="20220321 15:19:06.555">No browser is open.</status>
+</kw>
+<status status="FAIL" starttime="20220321 15:19:06.532" endtime="20220321 15:19:06.555">Setup failed:
+Execution terminated by signal
+
+Also teardown failed:
+No browser is open.</status>
+</test>
+<test id="s1-t4" name="Test case 12: excluir endereço">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220321 15:19:06.556" endtime="20220321 15:19:06.557">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t5" name="Test case 13: Validação preço majorado Rio de Janeiro">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220321 15:19:06.558" endtime="20220321 15:19:06.559">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t6" name="Test case 12: excluir endereço">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220321 15:19:06.560" endtime="20220321 15:19:06.560">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t7" name="Test case 14: Validação preço majorado Bahia">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220321 15:19:06.561" endtime="20220321 15:19:06.561">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t8" name="Test case 12: excluir endereço">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220321 15:19:06.562" endtime="20220321 15:19:06.562">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t9" name="Test case 15: Validação preço majorado Parana">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220321 15:19:06.563" endtime="20220321 15:19:06.564">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t10" name="Test case 12: excluir endereço">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220321 15:19:06.565" endtime="20220321 15:19:06.565">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t11" name="Test case 16: Validação preço majorado São Paulo">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220321 15:19:06.566" endtime="20220321 15:19:06.566">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t12" name="Test case 17: excluir endereço">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220321 15:19:06.567" endtime="20220321 15:19:06.568">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t13" name="Test case 18: Validação preço majorado Santa Catarina">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220321 15:19:06.569" endtime="20220321 15:19:06.570">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20220321 15:18:49.763" endtime="20220321 15:19:06.572"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="13" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="3" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+</tag>
+<suite>
+<stat pass="0" fail="13" skip="0" id="s1" name="Fluxo Carrinho">Fluxo Carrinho</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220321 15:19:06.559" level="WARN">Multiple test cases with name 'Test case 12: excluir endereço' executed in test suite 'Fluxo Carrinho'.</msg>
+<msg timestamp="20220321 15:19:06.562" level="WARN">Multiple test cases with name 'Test case 12: excluir endereço' executed in test suite 'Fluxo Carrinho'.</msg>
+<msg timestamp="20220321 15:19:06.565" level="WARN">Multiple test cases with name 'Test case 12: excluir endereço' executed in test suite 'Fluxo Carrinho'.</msg>
+</errors>
+</robot>
